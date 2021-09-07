@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home do exemplo de loja virtual">
+    <meta name="keywords" content="roupas, loja, ">
+
+    <link rel="stylesheet" href="style/estilo.css">
+
+    <script src="https://kit.fontawesome.com/c94de6905f.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Todos os produtos - RedStone</title>
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo da marca" width="125px">
+                </div>
+                <nav>
+                    <ul id="ItensMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="conta.html">Conta</a></li>
+                    </ul>
+                </nav>
+                <a href="carrinho.html"><img src="images/cart.png" width="30px" height="30px" alt="Icone de um carrinho de super mercado"></a>
+                <img src="images/menu.png" class="icone-menu" onclick="menutoggle()">
+            </div>
+            <div class="linha">
+                <div class="col-2">
+                    <h1>Dê Um Novo Estilo<br>Ao Seu Trabalho!</h1>
+                    <p>Sucesso não é sobre grandeza. É sobre consistência. Trabalho<br>duro e consistente leva ao
+                        sucesso. A grandeza vem depois.</p>
+                    <a href="" class="botao">Explore Agora &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png"
+                        alt="Um jogador comemorando sobreposto a outro jogador tentando chutar uma bola.">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Categorias em destaque----------- -->
+    <div class="categorias">
+        <div class="container-pequeno">
+            <div class="linha">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Categorias de produtos----------- -->
+    <div class="container-pequeno">
+        <h2 class="titulo">Produtos em Destaque</h2>
+        <div class="linha">
+            <div class="col-4">
+                <a href="detalhes-produtos.html"><img src="images/product-1.jpg" alt=""></a>
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo">últimos Produtos</h2>
+        <div class="linha">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div </div> </div> <div class="col-4">
+                <img src="images/product-11.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="">
+                <h4>Camisa Estampada Vermelha</h4>
+                <p>R$:50,00</p>
+                <div class="avaliacao">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- Ofertas ------------------- -->
+    <div class="oferta">
+        <div class="container-pequeno">
+            <div class="linha">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="imagem-oferta" alt="">
+                </div>
+                <div class="col-2">
+                    <p>Exclusivo da Loja RedStone</p>
+                    <h1>Smart Band 4</h1>
+                    <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, inventore corrupti omnis
+                        nihil nemo ullam facere impedit distinctio eligendi provident, obcaecati ducimus incidunt
+                        tempora magni repudiandae voluptate dolore ipsam fugit?</small>
+                    <br>
+                    <a href="" class="botao">Compre Agora &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- Depoimento ------------------- -->
+    <div class="depoimento">
+        <div class="container-pequeno">
+            <div class="linha">
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, provident! Dolorum assumenda
+                        excepturi iste quidem similique deleniti eaque eius dolore nam, quas perspiciatis vel culpa non,
+                        soluta, commodi dignissimos quos.</p>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <img src="images/user-1.png" alt="">
+                    <h3>Maria dos Santos</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, provident! Dolorum assumenda
+                        excepturi iste quidem similique deleniti eaque eius dolore nam, quas perspiciatis vel culpa non,
+                        soluta, commodi dignissimos quos.</p>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <img src="images/user-2.png" alt="">
+                    <h3>José Oliveira</h3>
+                </div>
+
+                <div class="col-3">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, provident! Dolorum assumenda
+                        excepturi iste quidem similique deleniti eaque eius dolore nam, quas perspiciatis vel culpa non,
+                        soluta, commodi dignissimos quos.</p>
+                    <div class="avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <img src="images/user-3.png" alt="">
+                    <h3>Juliana de Jesus</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------ Marcas ------------ -->
+    <div class="marcas">
+        <div class="container-pequeno">
+            <div class="linha">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- rodapé ----------- -->
+
+    <div class="rodape">
+        <div class="container">
+            <div class="linha">
+                <div class="rodape-col-1">
+                    <h3>Baixe Nosso Aplicativo</h3>
+                    <p>Baixe o App para celulares Android ou IOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="rodape-col-2">
+                    <h3>Baixe Nosso Aplicativo</h3>
+                    <img src="images/logo-white.png" alt="">
+                    <p>Nosso objetivo é trazer os benefícios e prazer do esporte para todos.</p>
+                </div>
+                <div class="rodape-col-3">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li>Cupões</li>
+                        <li>Blog de postagem</li>
+                        <li>Política de retorno</li>
+                        <li>Seja afiliado</li>
+                    </ul>
+                </div>
+                <div class="rodape-col-4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy-Tutorials</p>
+        </div>
+    </div>
+
+    <!-- ------------ Javascript para menu ------------- -->
+
+    <script>
+        var ItensMenu = document.getElementById("ItensMenu");
+
+        ItensMenu.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (ItensMenu.style.maxHeight == "0px") {
+                ItensMenu.style.maxHeight = "200px";
+            }
+            else {
+                ItensMenu.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home do exemplo de loja virtual">
+    <meta name="keywords" content="roupas, loja, ">
+
+    <link rel="stylesheet" href="style/estilo.css">
+
+    <script src="https://kit.fontawesome.com/c94de6905f.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>RedStone | Carrinho</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo da marca" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="ItensMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="images/cart.png" width="30px" height="30px" alt="Icone de um carrinho de super mercado"></a>
+            <img src="images/menu.png" class="icone-menu" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- --------------- Detalhes dos itens no carrinho ----------------- -->
+
+    <div class="container-pequeno pagina-carrinho">
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Sub-total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info-carrinho">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Camisteta Estampada</p>
+                            <small>Preço: R$: 50,00</small>
+                            <br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$: 50,00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info-carrinho">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Camisteta Estampada</p>
+                            <small>Preço: R$: 75,00</small>
+                            <br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$: 50,00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info-carrinho">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Camisteta Estampada</p>
+                            <small>Preço: R$: 75,00</small>
+                            <br>
+                            <a href="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>R$: 50,00</td>
+            </tr>
+        </table>
+
+        <div class="total">
+            <div class="preco-total">
+
+                <table>
+                    <tr>
+                        <td>Sub-total</td>
+                        <td>R$: 200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Frete</td>
+                        <td>R$: 35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sub-total</td>
+                        <td>R$: 235,00</td>
+                    </tr>
+                </table> 
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------- rodapé ----------- -->
+
+    <div class="rodape">
+        <div class="container">
+            <div class="linha">
+                <div class="rodape-col-1">
+                    <h3>Baixe Nosso Aplicativo</h3>
+                    <p>Baixe o App para celulares Android ou IOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="rodape-col-2">
+                    <h3>Baixe Nosso Aplicativo</h3>
+                    <img src="images/logo-white.png" alt="">
+                    <p>Nosso objetivo é trazer os benefícios e prazer do esporte para todos.</p>
+                </div>
+                <div class="rodape-col-3">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li>Cupões</li>
+                        <li>Blog de postagem</li>
+                        <li>Política de retorno</li>
+                        <li>Seja afiliado</li>
+                    </ul>
+                </div>
+                <div class="rodape-col-4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Easy-Tutorials</p>
+        </div>
+    </div>
+
+    <!-- ------------ Javascript para menu ------------- -->
+
+    <script>
+        var ItensMenu = document.getElementById("ItensMenu");
+
+        ItensMenu.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (ItensMenu.style.maxHeight == "0px") {
+                ItensMenu.style.maxHeight = "200px";
+            } else {
+                ItensMenu.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
